@@ -1,5 +1,6 @@
+require('dotenv').config()
 const jwt = require('jsonwebtoken');
-const JWT_SECRET = 'helloAmmu$123';
+const JWT_SECRET = process.env.Secret_key;
 
 //middleware function
 const fetchuser = (req, res, next) => {
